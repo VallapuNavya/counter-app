@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "date-time": "^4.0.0",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-loader-spinner": "^8.0.2",
+    "react-player": "^3.4.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

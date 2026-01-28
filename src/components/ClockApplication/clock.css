@@ -1,0 +1,59 @@
+/* Full page center */
+.page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;      /* vertical center */
+    justify-content: center;  /* horizontal center */
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  /* App box */
+  .clock-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+  }
+  
+  /* Button */
+  button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #4caf50;
+    color: white;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background: #43a047;
+  }
+  
+  /* Clock container */
+  .clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Clock image */
+  .small-clock {
+    width: 280px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Time text */
+  .time-text {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  

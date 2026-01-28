@@ -48,12 +48,26 @@ function VideoPlayer() {
       comment: commentForAddElement,
       time: dateTime(),
     };
-
     setComments([...comments, newComment]);
     setNameForAddComment("");
     setCommentForAddElement("");
   };
-
+  const updateElement = uniqueId => {
+    const updatedValue = prompt("Enter updated comment");
+  
+    const updatedComments = comments.map(eachItem => {
+      if (eachItem.uniqueId === uniqueId) {
+        return {
+          ...eachItem,
+          comment: updatedValue,
+        };
+      }
+      return eachItem;
+    });
+  
+    setComments(updatedComments);
+  };
+  
   const filteredComments = comments.filter(eachItem =>
     eachItem.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -84,6 +98,7 @@ function VideoPlayer() {
             <button onClick={() => deleteElement(eachItem.uniqueId)}>
               Delete
             </button>
+            <button onClick={(()=>updateElement(eachItem.uniqueId))}>Update</button>
             <hr />
           </div>
         ))
